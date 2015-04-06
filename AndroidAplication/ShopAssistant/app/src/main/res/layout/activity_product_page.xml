@@ -4,49 +4,120 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
+    <ScrollView
+        android:id="@+id/SrollId"
+        android:layout_height="fill_parent"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnBack"
-    />
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
 
-    <TextView
-        android:text="@string/Adidas_kanadia"
-        android:layout_width="wrap_content"
-        android:textSize="15pt"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="50pt"
-                android:layout_height="50pt"
-                android:id="@+id/shoes1"
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnBack"
+            />
+
+            <TextView
+                android:text="@string/Adidas_kanadia"
+                android:layout_width="wrap_content"
+                android:textSize="15pt"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/shoes1"
                 />
-        <ImageView
-            android:layout_width="50pt"
-            android:layout_height="50pt"
-            android:id="@+id/shoes2"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/shoes1"
-            />
-        <ImageView
-            android:layout_width="50pt"
-            android:layout_height="50pt"
-            android:id="@+id/shoes3"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/shoes1"
-            />
 
-     </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:id="@+id/shoes1"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/shoes1"
+                        />
+                <ImageView
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:id="@+id/shoes2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/shoes1"
+                    />
+                <ImageView
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:id="@+id/shoes3"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/shoes1"
+                    />
+
+             </LinearLayout>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ratingBar"
+                android:rating="3.5" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoes1Text"
+
+                />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSort"
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="0pt"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/commentNumber"
+
+
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnWriteComment"
+
+                     />
+
+             </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

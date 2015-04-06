@@ -5,4 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="btnBack">New scan</string>
     <string name="Adidas_kanadia">Adidas kanadia</string>
+    <string name="btnSort">Sort by date</string>
+    <string name="shoes1Text">Tackle the trail in a pair of Kanadia 7 custom shoes. This high-performance trail runner is lightweight and breathable, with a high-grip TRAXION™ outsole and waterproof mud guard. We designed one of the world's best loved outdoor running shoes.</string>
+    <string name="commentNumber">Numbers of comment: 5</string>
+    <string name="btnWriteComment">Write comment</string>
 </resources>
