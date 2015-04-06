@@ -3,4 +3,29 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/back_arrow1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/back_arrow"
+            />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/smile1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/smile"
+            />
+
+
+    </LinearLayout>
+
+
 </LinearLayout>
