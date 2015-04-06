@@ -5,7 +5,8 @@
     <string name="btnBack">New scan</string>
     <string name="Adidas_kanadia">Adidas kanadia</string>
     <string name="btnSort">Sort by date</string>
-    <string name="shoes1Text">Tackle the trail in a pair of Kanadia 7 custom shoes. This high-performance trail runner is lightweight and breathable, with a high-grip TRAXION™ outsole and waterproof mud guard. We designed one of the world's best loved outdoor running shoes.</string>
+    <string name="shoes1Text">This high-performance trail runner is lightweight and
+        breathable, with a high-grip and waterproof mud guard. We designed one of the world\'s best loved outdoor running shoes.</string>
     <string name="commentNumber">Numbers of comment: 5</string>
     <string name="btnWriteComment">Write comment</string>
     <string name="Back_to_product">Back to Product</string>
@@ -13,4 +14,7 @@
     <string name="write_comments">Write here your comments</string>
     <string name="remaining_character">300</string>
     <string name="btn_send">SEND</string>
+    <string name="comment1DateAndName">4.6.2015 | John</string>
+    <string name="comment1Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
+    <string name="comment1VoteScore">+34/-4</string>
 </resources>

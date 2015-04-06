@@ -113,7 +113,95 @@
              </LinearLayout>
 
 
+            <!-- ############       Comment 1 beging         ##################################    -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment1DateAndName"
+                android:textSize="8pt"
+            />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment1Text"
+             />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+
+
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comment1VoteScore" />
+
+                <ImageButton
+                    android:layout_width="20pt"
+                    android:layout_height="20pt"
+                    android:src="@drawable/like"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_width="20pt"
+                    android:layout_height="20pt"
+                    android:src="@drawable/dislike"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- ############       Comment 1 end         ##################################    -->
+
+
+
+            <!-- ############       Comment 2 beging         ##################################    -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment1DateAndName"
+                android:textSize="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment1Text"
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comment1VoteScore" />
+
+                <ImageButton
+                    android:layout_width="20pt"
+                    android:layout_height="20pt"
+                    android:src="@drawable/like"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_width="20pt"
+                    android:layout_height="20pt"
+                    android:src="@drawable/dislike"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- ############       Comment 2 end         ##################################    -->
 
 
         </LinearLayout>
