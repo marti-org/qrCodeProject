@@ -70,30 +70,80 @@
         android:orientation="horizontal">
 
         <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/write_comment"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/write_comment"
         />
 
         <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/add_photo"
-            android:layout_marginLeft="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/add_photo"
         />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/add_video"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/add_video"
-            />
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/add_video"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/add_video"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+        android:text="@string/write_comments"
+        android:layout_width="fill_parent"
+        android:textSize="15dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+        android:text="@string/remaining_character"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="315dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_send"
+            android:onClick="sendMessage"
+            android:textColor="#0000FF"
+            android:background="#AAAAAA"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+
 
     </LinearLayout>
 
