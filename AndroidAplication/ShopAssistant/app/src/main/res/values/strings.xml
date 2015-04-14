@@ -20,4 +20,7 @@
     <string name="comment1VoteScore">+34/-4</string>
     <string name="menu_user">User acount</string>
     <string name="menu_histori">Viewed product</string>
+    <string name="btnSearchManualy">Search manualy</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="title_activity_scan">Shop assistant</string>
 </resources>
