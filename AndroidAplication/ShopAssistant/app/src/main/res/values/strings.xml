@@ -25,4 +25,6 @@
     <string name="title_activity_scan">Shop assistant</string>
     <string name="title_activity_write_comment">Write Comment</string>
     <string name="imgScaningProcess">Scanning process</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
 </resources>

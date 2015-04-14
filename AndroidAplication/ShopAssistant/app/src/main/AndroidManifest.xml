@@ -34,6 +34,20 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ProductPage" />
         </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScanActivity" />
+        </activity>
+        <activity
+            android:name=".SearchResultActivity"
+            android:label="@string/title_activity_search_result" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SearchActivity" />
+        </activity>
     </application>
 
 </manifest>

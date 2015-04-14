@@ -8,19 +8,22 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class ScanActivity extends ActionBarActivity {
+public class SearchResultActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan);
+        setContentView(R.layout.activity_search_result);
+
+        //Show backButton
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_scan, menu);
+        getMenuInflater().inflate(R.menu.menu_search_result, menu);
         return true;
     }
 
@@ -39,14 +42,8 @@ public class ScanActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void btnScanClick(View view){
+    public void btnGoToProducttClick(View view){
         Intent intent = new Intent(this, ProductPage.class);
-        startActivity(intent);
-    }
-
-
-    public void btnSearchManualClick(View view){
-        Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
 }
