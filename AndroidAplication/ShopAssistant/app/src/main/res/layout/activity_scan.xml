@@ -6,14 +6,16 @@
 
 
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="14"
-        android:id="@+id/imageView"
+        android:id="@+id/btnScan"
         android:layout_toEndOf="@+id/textView"
         android:src="@drawable/camera_screan"
-        />
+        android:onClick="btnScanClick" />
+
+
 
     <Button
         android:layout_width="fill_parent"

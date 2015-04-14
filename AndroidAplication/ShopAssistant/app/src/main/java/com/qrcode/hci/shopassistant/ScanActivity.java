@@ -1,9 +1,11 @@
 package com.qrcode.hci.shopassistant;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class ScanActivity extends ActionBarActivity {
@@ -35,5 +37,10 @@ public class ScanActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void btnScanClick(View view){
+        Intent intent = new Intent(this, ProductPage.class);
+        startActivity(intent);
     }
 }
