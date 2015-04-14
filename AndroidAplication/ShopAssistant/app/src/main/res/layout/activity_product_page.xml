@@ -4,40 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/back_arrow1"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/back_arrow"
-            />
-
-        <TextView
-            android:text="@string/Back_to_scan"
-            android:layout_width="270dp"
-            android:textSize="25dp"
-            android:layout_marginLeft="10dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/smile1"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/smile"
-            />
-
-    </LinearLayout>
-
     <ScrollView
         android:id="@+id/SrollId"
         android:layout_height="fill_parent"
@@ -103,13 +69,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/shoes1Text"
 
-                />
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btnSort"
-                />
+                android:text="@string/btnWriteComment"
+
+                android:onClick="btnWriteCommentClick" />
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -129,12 +98,13 @@
 
                     />
 
+
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btnWriteComment"
-
-                    android:onClick="btnWriteCommentClick" />
+                    android:text="@string/btnSort"
+                    />
 
              </LinearLayout>
 

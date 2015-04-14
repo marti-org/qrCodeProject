@@ -3,41 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:id="@+id/back_arrow1"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/back_arrow"
-            />
-
-        <TextView
-            android:text="@string/Back_to_product"
-            android:layout_width="0dp"
-            android:layout_weight="4"
-            android:textSize="25dp"
-            android:layout_marginLeft="10dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="50dp"
-            android:id="@+id/smile1"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/smile"
-            />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -63,89 +28,86 @@
             />
 
     </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:text="@string/shoes1Text"
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/write_comment"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/write_comment"
-            />
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/add_photo"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/add_photo"
-            />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/add_video"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/add_video"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <TextView
+        android:text="@string/your_comments"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        />
+
+
 
         <EditText
-            android:text="@string/write_comments"
             android:layout_width="fill_parent"
             android:textSize="15dp"
-            android:layout_height="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:id="@+id/messageBox"
+            android:elegantTextHeight="false"
+            android:inputType="textMultiLine" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="center"
-        android:orientation="vertical">
 
         <TextView
             android:text="@string/remaining_character"
             android:layout_width="wrap_content"
             android:textSize="15dp"
-            android:layout_marginLeft="315dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:layout_marginRight="20dp"
             />
 
 
-        <Button
+
+
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_send"
-            android:onClick="sendMessage"
-            android:textColor="#0000FF"
-            android:background="#AAAAAA"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
 
+
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/add_photo"
+                android:id="@+id/add_photo"
+                android:scaleType="fitXY" />
+
+
+            <RatingBar
+                android:numStars="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                 />
+
+
+        </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_send"
+        android:onClick="btnSaveMessageClick"
+        android:textColor="#0000FF"
+        android:background="#AAAAAA"
+        android:layout_gravity="center" />
 
 
     </LinearLayout>
@@ -153,4 +115,3 @@
 
 
 
-</LinearLayout>

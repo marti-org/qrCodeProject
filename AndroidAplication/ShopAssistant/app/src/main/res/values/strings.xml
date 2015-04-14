@@ -12,7 +12,7 @@
     <string name="Back_to_product">Back to Product</string>
     <string name="Back_to_scan">New scaning</string>
     <string name="Shoe1">Adidas Kanadia</string>
-    <string name="write_comments">Write here your comments</string>
+    <string name="your_comments">Your comments:</string>
     <string name="remaining_character">300</string>
     <string name="btn_send">SEND</string>
     <string name="comment1DateAndName">4.6.2015 | John</string>
