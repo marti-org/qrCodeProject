@@ -23,4 +23,6 @@
     <string name="btnSearchManualy">Search manualy</string>
     <string name="title_activity_login">Log in</string>
     <string name="title_activity_scan">Shop assistant</string>
+    <string name="title_activity_write_comment">Write Comment</string>
+    <string name="imgScaningProcess">Scanning process</string>
 </resources>

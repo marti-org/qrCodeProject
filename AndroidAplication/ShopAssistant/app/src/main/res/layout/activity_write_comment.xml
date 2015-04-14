@@ -73,30 +73,30 @@
         android:orientation="horizontal">
 
         <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/write_comment"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/write_comment"
-        />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/write_comment"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/write_comment"
+            />
 
         <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/add_photo"
-        android:layout_marginLeft="20dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/add_photo"
-        />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/add_photo"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/add_photo"
+            />
 
         <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/add_video"
-        android:layout_marginLeft="20dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/add_video"
-        />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/add_video"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/add_video"
+            />
 
     </LinearLayout>
     <LinearLayout
@@ -109,12 +109,12 @@
         android:orientation="horizontal">
 
         <EditText
-        android:text="@string/write_comments"
-        android:layout_width="fill_parent"
-        android:textSize="15dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_vertical"
-        android:textAlignment="center" />
+            android:text="@string/write_comments"
+            android:layout_width="fill_parent"
+            android:textSize="15dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -127,13 +127,13 @@
         android:orientation="vertical">
 
         <TextView
-        android:text="@string/remaining_character"
-        android:layout_width="wrap_content"
-        android:textSize="15dp"
-        android:layout_marginLeft="315dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        />
+            android:text="@string/remaining_character"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="315dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
 
 
         <Button

@@ -13,7 +13,10 @@
         android:id="@+id/btnScan"
         android:layout_toEndOf="@+id/textView"
         android:src="@drawable/camera_screan"
-        android:onClick="btnScanClick" />
+        android:onClick="btnScanClick"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imgScaningProcess"
+        />
 
 
 
