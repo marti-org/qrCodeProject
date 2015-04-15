@@ -6,9 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class ProductPage extends ActionBarActivity {
+
+    private int comment1Likes = 15;
+    private int comment1Dislikes = 20;
+    private int comment2Likes = 4;
+    private int comment2Dislikes = 8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +25,11 @@ public class ProductPage extends ActionBarActivity {
 
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setComment1LikesRating();
+        setComment2LikesRating();
+
+
     }
 
 
@@ -46,4 +59,53 @@ public class ProductPage extends ActionBarActivity {
         Intent intent = new Intent(this, WriteCommentActivity.class);
         startActivity(intent);
     }
+
+    private void setComment1LikesRating(){
+        TextView txvComment1LikeScore = (TextView) findViewById(R.id.coment1LikeScore);
+        txvComment1LikeScore.setText(Integer.toString(comment1Likes)+"/"+Integer.toString(comment1Dislikes));
+    }
+
+    private void setComment2LikesRating(){
+        TextView txvComment2LikeScore = (TextView) findViewById(R.id.coment2LikeScore);
+        txvComment2LikeScore.setText(Integer.toString(comment2Likes)+"/"+Integer.toString(comment2Dislikes));
+    }
+
+    public void btnComment1LikeClick(View view){
+        comment1Likes++;
+        setComment1LikesRating();
+        ImageButton btnComment1Like = (ImageButton) findViewById(R.id.btnComment1Like);
+        btnComment1Like.setEnabled(false);
+        ImageButton btnComment1Dislike = (ImageButton) findViewById(R.id.btnComment1Dislike);
+        btnComment1Dislike.setEnabled(false);
+    }
+
+    public void btnComment1DislikeClick(View view){
+        comment1Dislikes++;
+        setComment1LikesRating();
+        ImageButton btnComment1Like = (ImageButton) findViewById(R.id.btnComment1Like);
+        btnComment1Like.setEnabled(false);
+        ImageButton btnComment1Dislike = (ImageButton) findViewById(R.id.btnComment1Dislike);
+        btnComment1Dislike.setEnabled(false);
+    }
+
+    public void btnComment2LikeClick(View view){
+        comment2Likes++;
+        setComment2LikesRating();
+        ImageButton btnComment2Like = (ImageButton) findViewById(R.id.btnComment2Like);
+        btnComment2Like.setEnabled(false);
+        ImageButton btnComment2Dislike = (ImageButton) findViewById(R.id.btnComment2Dislike);
+        btnComment2Dislike.setEnabled(false);
+    }
+
+    public void btnComment2DislikeClick(View view){
+        comment2Dislikes++;
+        setComment2LikesRating();
+        ImageButton btnComment2Like = (ImageButton) findViewById(R.id.btnComment2Like);
+        btnComment2Like.setEnabled(false);
+        ImageButton btnComment2Dislike = (ImageButton) findViewById(R.id.btnComment2Dislike);
+        btnComment2Dislike.setEnabled(false);
+    }
+
+
+
 }

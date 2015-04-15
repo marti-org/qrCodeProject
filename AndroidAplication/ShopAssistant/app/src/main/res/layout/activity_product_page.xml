@@ -117,11 +117,39 @@
                 android:textSize="8pt"
             />
 
+
+            <RatingBar
+                android:id="@+id/MyRating1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="3"
+                />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/face1"
+                />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/comment1Text"
              />
+
+            </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -137,17 +165,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/comment1VoteScore" />
+                    android:text="@string/comment1VoteScore"
+                    android:id="@+id/coment1LikeScore"
+                    />
 
                 <ImageButton
                     android:layout_width="20pt"
                     android:layout_height="20pt"
                     android:src="@drawable/like"
+                    android:id="@+id/btnComment1Like"
+                    android:onClick="btnComment1LikeClick"
                     android:scaleType="fitCenter" />
+
+
                 <ImageButton
                     android:layout_width="20pt"
                     android:layout_height="20pt"
                     android:src="@drawable/unlike"
+                    android:id="@+id/btnComment1Dislike"
+                    android:onClick="btnComment1DislikeClick"
                     android:scaleType="fitCenter" />
             </LinearLayout>
 
@@ -159,15 +195,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/comment1DateAndName"
+                android:text="@string/comment2DateAndName"
                 android:textSize="8pt"
                 />
 
-            <TextView
+
+            <RatingBar
+                android:id="@+id/MyRating2"
+                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/comment1Text"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="3"
                 />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/face2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comment2Text"
+                    />
+
+            </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -183,17 +247,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/comment1VoteScore" />
+                    android:text="@string/comment2VoteScore"
+                    android:id="@+id/coment2LikeScore"
+                    />
 
                 <ImageButton
                     android:layout_width="20pt"
                     android:layout_height="20pt"
                     android:src="@drawable/like"
+                    android:id="@+id/btnComment2Like"
+                    android:onClick="btnComment2LikeClick"
                     android:scaleType="fitCenter" />
                 <ImageButton
                     android:layout_width="20pt"
                     android:layout_height="20pt"
+                    android:id="@+id/btnComment2Dislike"
+                    android:onClick="btnComment2DislikeClick"
                     android:src="@drawable/unlike"
+
                     android:scaleType="fitCenter" />
             </LinearLayout>
 
