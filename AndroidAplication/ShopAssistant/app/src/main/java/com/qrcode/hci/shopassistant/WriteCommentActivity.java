@@ -3,12 +3,18 @@ package com.qrcode.hci.shopassistant;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class WriteCommentActivity extends ActionBarActivity {
+
+    private int maxLetter = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +23,28 @@ public class WriteCommentActivity extends ActionBarActivity {
 
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        //Edit message change numbers
+        EditText myTextBox = (EditText) findViewById(R.id.messageBox);
+        myTextBox.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {
+            }
+
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+                TextView myOutputBox = (TextView) findViewById(R.id.txvCounting);
+                int letterCount = maxLetter - start;
+                myOutputBox.setText("Characters left:"+Integer.toString(letterCount));
+                //myOutputBox.setText("text");
+            }
+        });
+
     }
 
 

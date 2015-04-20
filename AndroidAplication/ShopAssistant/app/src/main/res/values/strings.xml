@@ -13,7 +13,7 @@
     <string name="Back_to_scan">New scaning</string>
     <string name="Shoe1">Adidas Kanadia</string>
     <string name="your_comments">Your comments:</string>
-    <string name="remaining_character">300</string>
+    <string name="remaining_character">Characters left:300</string>
     <string name="btn_send">SEND</string>
     <string name="comment1DateAndName">4.6.2015 | John</string>
     <string name="comment1Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
@@ -30,4 +30,14 @@
     <string name="imgScaningProcess">Scanning process</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="photo1Description">Black variant</string>
+    <string name="photo2Description">Yellow variant</string>
+    <string name="photo3Description">Orange variant</string>
+    <string name="photo4Description">Blue variant</string>
+    <string name="photo5Description">Yellow variant</string>
+    <string name="photo6Description">Green variant</string>
+    <string name="photo7Description">Grean variant</string>
+    <string name="photo8Description">Brown variant</string>
+    <string name="characterLeft">Characters left:</string>
+
 </resources>
