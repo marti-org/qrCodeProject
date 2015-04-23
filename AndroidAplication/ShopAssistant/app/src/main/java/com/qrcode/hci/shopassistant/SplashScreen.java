@@ -14,6 +14,11 @@ public class SplashScreen  extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
+
+
+
+        setContentView(R.layout.splash_screen);
+
         Thread splash_screen = new Thread()
         {
             public void run()
@@ -21,21 +26,19 @@ public class SplashScreen  extends ActionBarActivity {
                 try
                 {
                     sleep(3000);
-
-                    startActivity(new Intent("com.qrcode.hci.shopassistant.ScanActivity"));
+                    //startActivity(new Intent("com.qrcode.hci.shopassistant.ScanActivity"));
                 }
-                catch (InterruptedException e)
+                catch(Exception e)
                 {
                     e.printStackTrace();
                 }
                 finally {
+                    startActivity(new Intent(getApplicationContext(),ScanActivity.class));
                     finish();
-
                 }
-
             }
-        };
 
+        };
 
         splash_screen.start();
 
