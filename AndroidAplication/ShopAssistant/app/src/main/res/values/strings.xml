@@ -3,6 +3,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="hello">Listview Hello!</string>
     <string name="search_results">We found about 18.035 results matching your search criteria</string>
+    <string name="Rating_info">Rating 4 - 324 Votes</string>
+
 
     <string name="action_settings">Settings</string>
     <string name="btnBack">New scan</string>
