@@ -1,23 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.qrcode.hci.shopassistant.SearchActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
 
-    <Button
+    <EditText
+        android:id="@+id/edt_txt_search"
+        android:textSize="20dp"
+        android:layout_weight="0.8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search product"
+        android:hint="@string/Search"
+         />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.2"
         android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="90dp"
+        android:background="@drawable/ic_action_search_blue"
         android:onClick="btnSearchClick" />
 
-</RelativeLayout>
+</LinearLayout>
