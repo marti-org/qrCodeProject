@@ -32,6 +32,8 @@
     <string name="comment2DateAndName">17.5.2015 | River</string>
     <string name="comment2Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
     <string name="comment2VoteScore">+4/-46</string>
+    <string name="comment3DateAndName">30.5.2015 | Bolt</string>
+    <string name="comment3Text">I won some olympic medal in this shoes.</string>
     <string name="menu_user">User acount</string>
     <string name="menu_histori">Viewed product</string>
     <string name="btnSearchManualy">Search manualy</string>

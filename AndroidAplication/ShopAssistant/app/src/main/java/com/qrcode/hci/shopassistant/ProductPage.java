@@ -1,17 +1,26 @@
 package com.qrcode.hci.shopassistant;
 
+import android.app.ActionBar;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,18 +31,26 @@ import java.util.ArrayList;
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 
 
+
+
+
 public class ProductPage extends ActionBarActivity {
 
-    private int comment1Likes = 15;
-    private int comment1Dislikes = 20;
-    private int comment2Likes = 4;
-    private int comment2Dislikes = 8;
+
+    //my constant for id
+    private static int btnLikeId = 1000;
+    private static int btnDislikeId = 2000;
+    private static int txvScoreId = 3000;
+
 
     //CoverFlow Variables
     private FeatureCoverFlow mCoverFlow;
     private CoverFlowAdapter mAdapter;
     private ArrayList<GameEntity> mData = new ArrayList<>(0);
     private TextSwitcher mTitle;
+
+    //Comments variables
+    private ArrayList<Comment> mComments = new ArrayList<>(0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +60,33 @@ public class ProductPage extends ActionBarActivity {
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setComment1LikesRating();
-        setComment2LikesRating();
+
+        //Inserting comments
+        //public Comment(String Name, int Face,String Date, String Text, int Likes, int Dislikes)
+        mComments.add(new Comment(1,
+                getResources().getString(R.string.comment1DateAndName),
+                R.drawable.face1,
+                getResources().getString(R.string.comment1DateAndName),
+                getResources().getString(R.string.comment1Text),
+                5,6));
+
+        mComments.add(new Comment(2,
+                getResources().getString(R.string.comment2DateAndName),
+                R.drawable.face2,
+                getResources().getString(R.string.comment2DateAndName),
+                getResources().getString(R.string.comment2Text),
+                8,10));
+
+        mComments.add(new Comment(3,
+                getResources().getString(R.string.comment3DateAndName),
+                R.drawable.face3,
+                getResources().getString(R.string.comment3DateAndName),
+                getResources().getString(R.string.comment3Text),
+                400,2));
+
+
+        insertComments();
+
 
 
 
@@ -99,6 +141,8 @@ public class ProductPage extends ActionBarActivity {
         });
 
 
+
+
     }
 
 
@@ -129,52 +173,162 @@ public class ProductPage extends ActionBarActivity {
         startActivity(intent);
     }
 
-    private void setComment1LikesRating(){
-        TextView txvComment1LikeScore = (TextView) findViewById(R.id.coment1LikeScore);
-        txvComment1LikeScore.setText(Integer.toString(comment1Likes)+"/"+Integer.toString(comment1Dislikes));
+    public void insertComments(){
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View v = inflater.inflate(R.layout.activity_product_page, null);
+
+        LinearLayout ll = (LinearLayout) v.findViewById(R.id.myLayout);
+
+        for (Comment comment : mComments)
+        {
+            insertComment(ll,comment);
+        }
+
+        setContentView(v);
+
     }
 
-    private void setComment2LikesRating(){
-        TextView txvComment2LikeScore = (TextView) findViewById(R.id.coment2LikeScore);
-        txvComment2LikeScore.setText(Integer.toString(comment2Likes)+"/"+Integer.toString(comment2Dislikes));
-    }
+    public void insertComment(LinearLayout ll, Comment comment)//Comment comment)
+    {
 
-    public void btnComment1LikeClick(View view){
-        comment1Likes++;
-        setComment1LikesRating();
-        ImageButton btnComment1Like = (ImageButton) findViewById(R.id.btnComment1Like);
-        btnComment1Like.setEnabled(false);
-        ImageButton btnComment1Dislike = (ImageButton) findViewById(R.id.btnComment1Dislike);
-        btnComment1Dislike.setEnabled(false);
-    }
 
-    public void btnComment1DislikeClick(View view){
-        comment1Dislikes++;
-        setComment1LikesRating();
-        ImageButton btnComment1Like = (ImageButton) findViewById(R.id.btnComment1Like);
-        btnComment1Like.setEnabled(false);
-        ImageButton btnComment1Dislike = (ImageButton) findViewById(R.id.btnComment1Dislike);
-        btnComment1Dislike.setEnabled(false);
-    }
 
-    public void btnComment2LikeClick(View view){
-        comment2Likes++;
-        setComment2LikesRating();
-        ImageButton btnComment2Like = (ImageButton) findViewById(R.id.btnComment2Like);
-        btnComment2Like.setEnabled(false);
-        ImageButton btnComment2Dislike = (ImageButton) findViewById(R.id.btnComment2Dislike);
-        btnComment2Dislike.setEnabled(false);
-    }
+        TextView tv = new TextView(this);
+        tv.setText(comment.name);
+        tv.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+        tv.setTextSize(18);
+        ll.addView(tv);
 
-    public void btnComment2DislikeClick(View view){
-        comment2Dislikes++;
-        setComment2LikesRating();
-        ImageButton btnComment2Like = (ImageButton) findViewById(R.id.btnComment2Like);
-        btnComment2Like.setEnabled(false);
-        ImageButton btnComment2Dislike = (ImageButton) findViewById(R.id.btnComment2Dislike);
-        btnComment2Dislike.setEnabled(false);
-    }
+        RatingBar rb = new RatingBar(this, null, android.R.attr.ratingBarStyleSmall);
+        rb.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+        rb.setNumStars(5);
+        rb.setRating(3);
+        ll.addView(rb);
 
+
+        //Linear Lineout Message
+        // Create a LinearLayout element
+        LinearLayout llMessage = new LinearLayout(this);
+        llMessage.setOrientation(LinearLayout.HORIZONTAL);
+        llMessage.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        ImageView imgFace = new ImageView(this);
+        imgFace.setImageResource(comment.face);
+        imgFace.setLayoutParams(new ViewGroup.LayoutParams(100,100));
+
+        TextView tvComment = new TextView(this);
+        tvComment.setText(comment.text);
+
+        llMessage.addView(imgFace);
+        llMessage.addView(tvComment);
+        ll.addView(llMessage);
+
+
+        //LinearLiout Voting
+        LinearLayout llVoting = new LinearLayout(this);
+        llVoting.setOrientation(LinearLayout.HORIZONTAL);
+        //llVoting.setLayoutParams(new ViewGroup.LayoutParams(
+          //      ViewGroup.LayoutParams.MATCH_PARENT,
+            //    ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.weight = 1.0f;
+        params.gravity = Gravity.RIGHT;
+        llVoting.setLayoutParams(params);
+
+        llVoting.setGravity(Gravity.CENTER);
+
+        TextView txvScore = new TextView(this);
+        txvScore.setText("+"+Integer.toString(comment.likes)+"/-"+Integer.toString(comment.dislikes));
+        txvScore.setId(txvScoreId+comment.id);
+
+        ImageButton btnLike = new ImageButton(this);
+        //btnLike.setBackgroundColor(Color.WHITE);
+        btnLike.setLayoutParams(new ViewGroup.LayoutParams(68, 68));
+        btnLike.setImageResource(R.drawable.like);
+        btnLike.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        btnLike.setId(btnLikeId+comment.id);
+        btnLike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int btnId = view.getId();
+                int itemId = btnId - btnLikeId;
+
+                //find item in list of  comment
+                for (Comment comment : mComments)
+                {
+                    if (comment.id==itemId){
+
+                        comment.likes++;
+
+                        //Write new rating
+                        TextView txvComment1LikeScore = (TextView) findViewById(txvScoreId+itemId);
+                        txvComment1LikeScore.setText("+"+Integer.toString(comment.likes)+"/-"+Integer.toString(comment.dislikes));
+
+                        //Turn of button
+                        ImageButton btnCommentLike = (ImageButton) findViewById(btnLikeId+itemId);
+                        btnCommentLike.setEnabled(false);
+                        ImageButton btnCommentDislike = (ImageButton) findViewById(btnDislikeId+itemId);
+                        btnCommentDislike.setEnabled(false);
+                    }
+                }
+
+
+            }
+        });
+
+        ImageButton btnDislike = new ImageButton(this);
+       // btnDislike.setBackgroundColor(Color.WHITE);
+        btnDislike.setLayoutParams(new ViewGroup.LayoutParams(68,68));
+        btnDislike.setImageResource(R.drawable.unlike);
+        btnDislike.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        btnDislike.setId(btnDislikeId+comment.id);
+        btnDislike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int btnId = view.getId();
+                int itemId = btnId - btnDislikeId;
+
+                //find item in list of  comment
+                for (Comment comment : mComments)
+                {
+                    if (comment.id==itemId){
+
+                        comment.dislikes++;
+
+                        //Write new rating
+                        TextView txvComment1LikeScore = (TextView) findViewById(txvScoreId+itemId);
+                        txvComment1LikeScore.setText("+"+Integer.toString(comment.likes)+"/-"+Integer.toString(comment.dislikes));
+
+                        //Turn of button
+                        ImageButton btnCommentLike = (ImageButton) findViewById(btnLikeId+itemId);
+                        btnCommentLike.setEnabled(false);
+                        ImageButton btnCommentDislike = (ImageButton) findViewById(btnDislikeId+itemId);
+                        btnCommentDislike.setEnabled(false);
+                    }
+                }
+
+
+            }
+        });
+
+        llVoting.addView(txvScore);
+        llVoting.addView(btnLike);
+        llVoting.addView(btnDislike);
+
+        ll.addView(llVoting);
+
+
+
+
+
+    }
 
 
 }
