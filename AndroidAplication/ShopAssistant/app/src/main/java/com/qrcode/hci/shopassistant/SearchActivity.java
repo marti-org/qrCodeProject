@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 
 public class SearchActivity extends ActionBarActivity {
@@ -17,6 +19,17 @@ public class SearchActivity extends ActionBarActivity {
 
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        //Autocoplete searching
+        // Get a reference to the AutoCompleteTextView in the layout
+        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
+        // Get the string array
+        String[] countries = getResources().getStringArray(R.array.products_array);
+        // Create the adapter and set it to the AutoCompleteTextView
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, countries);
+        textView.setAdapter(adapter);
     }
 
 
