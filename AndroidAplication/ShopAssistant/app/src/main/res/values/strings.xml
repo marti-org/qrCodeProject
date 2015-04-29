@@ -27,13 +27,14 @@
     <string name="your_comments">Your comments:</string>
     <string name="remaining_character">Characters left:300</string>
     <string name="btn_send">SEND</string>
-    <string name="comment1DateAndName">4.6.2015 | John</string>
+    <string name="comment1DateAndName">10.3.2015 | John</string>
     <string name="comment1Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
     <string name="comment1VoteScore">+34/-4</string>
-    <string name="comment2DateAndName">17.5.2015 | River</string>
+    <string name="comment2DateAndName">20.5.2015 | River</string>
     <string name="comment2Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
     <string name="comment2VoteScore">+4/-46</string>
-    <string name="comment3DateAndName">30.5.2015 | Bolt</string>
+    <string name="comment3DateAndName">3.1.2015 | Bolt</string>
+    <string name="comment4DateAndName">Today | Unsigned user</string>
     <string name="comment3Text">I won some olympic medal in this shoes.</string>
     <string name="menu_user">User acount</string>
     <string name="menu_histori">Viewed product</string>

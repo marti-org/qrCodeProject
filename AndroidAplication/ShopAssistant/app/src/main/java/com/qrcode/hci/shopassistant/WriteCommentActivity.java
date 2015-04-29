@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 public class WriteCommentActivity extends ActionBarActivity {
 
+    public final static String EXTRA_MESSAGE = "com.qrcode.hci.shopassistant.MESSAGE";
+    public final static String EXTRA_SENDMESSAGE = "com.qrcode.hci.shopassistant.SENDMESSAGE";
     private int maxLetter = 300;
 
     @Override
@@ -71,7 +73,13 @@ public class WriteCommentActivity extends ActionBarActivity {
     }
 
     public void btnSaveMessageClick(View view){
+
         Intent intent = new Intent(this, ProductPage.class);
+        EditText editText = (EditText) findViewById(R.id.messageBox);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,message);
+        intent.putExtra(EXTRA_SENDMESSAGE,true);
         startActivity(intent);
+
     }
 }

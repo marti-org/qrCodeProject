@@ -67,34 +67,52 @@ public class ProductPage extends ActionBarActivity {
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Set sorting
-        Intent intent = getIntent();
-        SortByPopular = intent.getBooleanExtra(ProductPage.EXTRA_SORT,true);
-
-
-
         //Inserting comments
         //public Comment(String Name, int Face,String Date, String Text, int Likes, int Dislikes)
+
         mComments.add(new Comment(1,
+                getResources().getString(R.string.comment3DateAndName),
+                R.drawable.face3,
+                getResources().getString(R.string.comment3DateAndName),
+                getResources().getString(R.string.comment3Text),
+                400,2));
+
+        mComments.add(new Comment(2,
                 getResources().getString(R.string.comment1DateAndName),
                 R.drawable.face1,
                 getResources().getString(R.string.comment1DateAndName),
                 getResources().getString(R.string.comment1Text),
-                5,6));
+                65,6));
 
-        mComments.add(new Comment(2,
+        mComments.add(new Comment(3,
                 getResources().getString(R.string.comment2DateAndName),
                 R.drawable.face2,
                 getResources().getString(R.string.comment2DateAndName),
                 getResources().getString(R.string.comment2Text),
                 8,10));
 
-        mComments.add(new Comment(3,
-                getResources().getString(R.string.comment3DateAndName),
-                R.drawable.face3,
-                getResources().getString(R.string.comment3DateAndName),
-                getResources().getString(R.string.comment3Text),
-                400,2));
+
+
+
+        //Set sorting
+        Intent intent = getIntent();
+        SortByPopular = intent.getBooleanExtra(ProductPage.EXTRA_SORT,true);
+
+        //Get message
+        boolean sendMessage = intent.getBooleanExtra(WriteCommentActivity.EXTRA_SENDMESSAGE,false);
+        if(sendMessage){
+            String message = intent.getStringExtra(WriteCommentActivity.EXTRA_MESSAGE);
+            int commentId = mComments.size()+1;
+            mComments.add(new Comment(commentId,
+                    getResources().getString(R.string.comment4DateAndName),
+                    R.drawable.face4,
+                    getResources().getString(R.string.comment4DateAndName),
+                    message,
+                    0,0));
+
+
+        }
+
 
 
         insertComments();
@@ -155,6 +173,9 @@ public class ProductPage extends ActionBarActivity {
         if(!SortByPopular) {
             Button btnSort = (Button) findViewById(R.id.bntSort);
             btnSort.setText(getResources().getString(R.string.btnSortPopular));
+        }else{
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSort));
         }
 
         TextView txtCommentNumber = (TextView) findViewById(R.id.commentNumber);
