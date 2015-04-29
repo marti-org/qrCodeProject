@@ -1,6 +1,7 @@
 package com.qrcode.hci.shopassistant;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -26,6 +27,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
@@ -41,6 +44,10 @@ public class ProductPage extends ActionBarActivity {
     private static int btnLikeId = 1000;
     private static int btnDislikeId = 2000;
     private static int txvScoreId = 3000;
+
+    public final static String EXTRA_SORT = "com.qrcode.hci.shopassistant.SORT";
+
+    private boolean SortByPopular = true;
 
 
     //CoverFlow Variables
@@ -59,6 +66,11 @@ public class ProductPage extends ActionBarActivity {
 
         //Show backButton
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //Set sorting
+        Intent intent = getIntent();
+        SortByPopular = intent.getBooleanExtra(ProductPage.EXTRA_SORT,true);
+
 
 
         //Inserting comments
@@ -140,8 +152,13 @@ public class ProductPage extends ActionBarActivity {
             }
         });
 
+        if(!SortByPopular) {
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSortPopular));
+        }
 
-
+        TextView txtCommentNumber = (TextView) findViewById(R.id.commentNumber);
+        txtCommentNumber.setText(getResources().getString(R.string.commentNumber)+ Integer.toString(mComments.size()));
 
     }
 
@@ -173,15 +190,35 @@ public class ProductPage extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void btnSortCommentClick(View view){
+        SortByPopular = !SortByPopular;
+
+        Intent intent = getIntent();
+        finish();
+        intent.putExtra(EXTRA_SORT,SortByPopular);
+        startActivity(intent);
+    }
+
     public void insertComments(){
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.activity_product_page, null);
 
         LinearLayout ll = (LinearLayout) v.findViewById(R.id.myLayout);
 
-        for (Comment comment : mComments)
+        if(SortByPopular) {
+            for (Comment comment : mComments) {
+                insertComment(ll, comment);
+            }
+        }else
         {
-            insertComment(ll,comment);
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSortPopular));
+
+            Comment comment;
+            for (int j = mComments.size()-1;j>=0;j--){
+                comment = mComments.get(j);
+                insertComment(ll, comment);
+            }
         }
 
         setContentView(v);

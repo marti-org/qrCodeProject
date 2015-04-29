@@ -96,6 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="@string/commentNumber"
+                    android:id="@+id/commentNumber"
                     />
 
 
@@ -103,7 +104,9 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="btnSortCommentClick"
                     android:text="@string/btnSort"
+                    android:id="@+id/bntSort"
                     />
 
              </LinearLayout>

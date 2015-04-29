@@ -16,9 +16,10 @@
     <string name="btnBack">New scan</string>
     <string name="Adidas_kanadia">Adidas kanadia</string>
     <string name="btnSort">Sort by date</string>
+    <string name="btnSortPopular">Sort by popularity</string>
     <string name="shoes1Text">This high-performance trail runner is lightweight and
         breathable, with a high-grip and waterproof mud guard. We designed one of the world\'s best loved outdoor running shoes.</string>
-    <string name="commentNumber">Numbers of comment: 5</string>
+    <string name="commentNumber">Numbers of comment: </string>
     <string name="btnWriteComment">Write comment</string>
     <string name="Back_to_product">Back to Product</string>
     <string name="Back_to_scan">New scaning</string>
