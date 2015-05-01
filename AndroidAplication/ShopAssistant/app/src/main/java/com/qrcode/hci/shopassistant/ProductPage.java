@@ -120,14 +120,14 @@ public class ProductPage extends ActionBarActivity {
 
 
 
-        mData.add(new GameEntity(R.drawable.addidas1, R.string.photo1Description));
-        mData.add(new GameEntity(R.drawable.addidas2, R.string.photo2Description));
-        mData.add(new GameEntity(R.drawable.addidas3, R.string.photo3Description));
-        mData.add(new GameEntity(R.drawable.addidas4, R.string.photo4Description));
-        mData.add(new GameEntity(R.drawable.addidas5, R.string.photo5Description));
-        mData.add(new GameEntity(R.drawable.addidas6, R.string.photo6Description));
-        mData.add(new GameEntity(R.drawable.addidas7, R.string.photo7Description));
-        mData.add(new GameEntity(R.drawable.addidas8, R.string.photo8Description));
+        mData.add(new GameEntity(R.drawable.i1, R.string.photo1Description));
+        mData.add(new GameEntity(R.drawable.i2, R.string.photo2Description));
+        mData.add(new GameEntity(R.drawable.i3, R.string.photo3Description));
+        mData.add(new GameEntity(R.drawable.i4, R.string.photo4Description));
+        mData.add(new GameEntity(R.drawable.i5, R.string.photo5Description));
+        mData.add(new GameEntity(R.drawable.i6, R.string.photo6Description));
+        mData.add(new GameEntity(R.drawable.i7, R.string.photo7Description));
+        mData.add(new GameEntity(R.drawable.i8, R.string.photo8Description));
 
 
         mTitle = (TextSwitcher) findViewById(R.id.title);

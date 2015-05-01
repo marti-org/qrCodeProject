@@ -14,11 +14,15 @@
 
     <string name="action_settings">Settings</string>
     <string name="btnBack">New scan</string>
-    <string name="Adidas_kanadia">Adidas kanadia</string>
+    <string name="iphone5_product">iphone5</string>
     <string name="btnSort">Sort by date</string>
     <string name="btnSortPopular">Sort by popularity</string>
-    <string name="shoes1Text">This high-performance trail runner is lightweight and
-        breathable, with a high-grip and waterproof mud guard. We designed one of the world\'s best loved outdoor running shoes.</string>
+
+    <string name="shoes1Text">Unlocked cell phones are compatible with GSM carriers like ATT and T-Mobile as well as with GSM SIM cards
+        (e.g. H20,Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint,Verizon, Boost or Virgin. Size 16 GB
+        </string>
+
+
     <string name="commentNumber">Numbers of comment: </string>
     <string name="btnWriteComment">Write comment</string>
     <string name="Back_to_product">Back to Product</string>
@@ -27,15 +31,19 @@
     <string name="your_comments">Your comments:</string>
     <string name="remaining_character">Characters left:300</string>
     <string name="btn_send">SEND</string>
+
     <string name="comment1DateAndName">10.3.2015 | John</string>
-    <string name="comment1Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
+    <string name="comment1Text"> it provides me all that Apple can user-friendly interface, perfect phone camera, perfect music quality, perfect screen quality, reliability and etc.</string>
     <string name="comment1VoteScore">+34/-4</string>
+
     <string name="comment2DateAndName">20.5.2015 | River</string>
-    <string name="comment2Text">Great shoe by Adidas, I had to order a half size larger than my regular size, as recommended by other reviews. I also owned a pair of thrashers in my regular size and they were a tad small.</string>
+    <string name="comment2Text">My experience is worst and I am disappointed. Price/value ratio is less than Lenovo forexample. I have no offer warmly. </string>
     <string name="comment2VoteScore">+4/-46</string>
+
     <string name="comment3DateAndName">3.1.2015 | Bolt</string>
+    <string name="comment3Text">Great smartphone by Apple. It is my best.</string>
+
     <string name="comment4DateAndName">Today | Unsigned user</string>
-    <string name="comment3Text">I won some olympic medal in this shoes.</string>
     <string name="menu_user">User acount</string>
     <string name="menu_histori">Viewed product</string>
     <string name="btnSearchManualy">Search manualy</string>
@@ -45,14 +53,16 @@
     <string name="imgScaningProcess">Scanning process</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_search_result">SearchResultActivity</string>
-    <string name="photo1Description">Black variant</string>
-    <string name="photo2Description">Yellow variant</string>
-    <string name="photo3Description">Orange variant</string>
-    <string name="photo4Description">Blue variant</string>
-    <string name="photo5Description">Yellow variant</string>
-    <string name="photo6Description">Green variant</string>
-    <string name="photo7Description">Grean variant</string>
-    <string name="photo8Description">Brown variant</string>
+
+    <string name="photo1Description">Gold variant</string>
+    <string name="photo2Description">Video performance</string>
+    <string name="photo3Description">Black variant</string>
+    <string name="photo4Description">Smart design</string>
+    <string name="photo5Description">Retina display</string>
+    <string name="photo6Description">Black variant</string>
+    <string name="photo7Description">Various variant</string>
+    <string name="photo8Description">Other covers</string>
+
     <string name="characterLeft">Characters left:</string>
     <string-array name="products_array">
         <item>Watch</item>

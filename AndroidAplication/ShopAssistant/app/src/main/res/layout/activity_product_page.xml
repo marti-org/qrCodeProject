@@ -28,7 +28,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:text="@string/Adidas_kanadia"
+                android:text="@string/iphone5_product"
                 android:layout_width="wrap_content"
                 android:textSize="15pt"
                 android:layout_height="wrap_content"
