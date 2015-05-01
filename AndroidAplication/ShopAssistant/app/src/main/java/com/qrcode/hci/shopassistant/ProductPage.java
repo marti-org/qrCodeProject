@@ -308,9 +308,9 @@ public class ProductPage extends ActionBarActivity {
 
         ImageButton btnLike = new ImageButton(this);
         //btnLike.setBackgroundColor(Color.WHITE);
-        btnLike.setLayoutParams(new ViewGroup.LayoutParams(68, 68));
-        btnLike.setImageResource(R.drawable.like);
-        btnLike.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        btnLike.setLayoutParams(new ViewGroup.LayoutParams(100, 100));
+        btnLike.setImageResource(R.drawable.like2);
+        btnLike.setScaleType(ImageView.ScaleType.CENTER_CROP);
         btnLike.setId(btnLikeId+comment.id);
         btnLike.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -343,9 +343,9 @@ public class ProductPage extends ActionBarActivity {
 
         ImageButton btnDislike = new ImageButton(this);
        // btnDislike.setBackgroundColor(Color.WHITE);
-        btnDislike.setLayoutParams(new ViewGroup.LayoutParams(68,68));
-        btnDislike.setImageResource(R.drawable.unlike);
-        btnDislike.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        btnDislike.setLayoutParams(new ViewGroup.LayoutParams(100,100));
+        btnDislike.setImageResource(R.drawable.dislike2);
+        btnDislike.setScaleType(ImageView.ScaleType.CENTER_CROP);
         btnDislike.setId(btnDislikeId+comment.id);
         btnDislike.setOnClickListener(new View.OnClickListener() {
             @Override
