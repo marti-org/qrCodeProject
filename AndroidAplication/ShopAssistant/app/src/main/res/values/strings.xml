@@ -2,7 +2,7 @@
     <string name="app_name">ShopAssistant</string>
     <string name="hello_world">Hello world!</string>
     <string name="hello">Listview Hello!</string>
-    <string name="search_results">We found about 18.035 results matching your search criteria</string>
+    <string name="search_results">We found about 12 results matching your search criteria</string>
     <string name="Rating_info">324 Votes</string>
     <string name="Search">SEARCH...</string>
     <string name="MENU_rabbit">Rabbit</string>
