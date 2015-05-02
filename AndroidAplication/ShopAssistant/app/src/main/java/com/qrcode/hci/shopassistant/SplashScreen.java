@@ -15,10 +15,6 @@ public class SplashScreen  extends ActionBarActivity {
         setContentView(R.layout.splash_screen);
 
 
-
-
-        setContentView(R.layout.splash_screen);
-
         Thread splash_screen = new Thread()
         {
             public void run()

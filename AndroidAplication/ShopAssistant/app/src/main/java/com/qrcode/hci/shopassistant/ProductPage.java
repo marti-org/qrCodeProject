@@ -155,6 +155,48 @@ public class ProductPage extends ActionBarActivity {
                 Toast.makeText(ProductPage.this,
                         getResources().getString(mData.get(position).titleResId),
                         Toast.LENGTH_SHORT).show();
+
+                if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i1.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic1.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i2.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic2.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i3.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic3.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i4.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic4.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i5.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic5.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i6.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic6.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i7.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic7.class);
+                    startActivity(yeni);
+                }
+                else if(getResources().getString(mData.get(position).imageResId).equals("res/drawable/i8.jpg"))
+                {
+                    Intent yeni = new Intent(ProductPage.this, Pic8.class);
+                    startActivity(yeni);
+                }
+
             }
         });
 
