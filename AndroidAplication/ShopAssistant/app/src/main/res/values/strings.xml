@@ -72,4 +72,17 @@
         <item>Wii</item>
     </string-array>
 
+    <string name="za">Watch</string>
+    <string name="zb">Tablet</string>
+    <string name="zc">Iphone 5S</string>
+    <string name="zd">Samsung GALAXY S4</string>
+
+    <string name="zf">Iphone 6</string>
+    <string name="zg">Samsung GALAXY S6</string>
+    <string name="zh">LG723 G3</string>
+    <string name="zi">Samsung GALAXY S3 NEO WHITE</string>
+    <string name="zj">Samsung GALAXY S3 MINI WHITE</string>
+    <string name="zk">Samsung GALAXY GRAND NEO PLUS BLACK</string>
+
+
 </resources>
