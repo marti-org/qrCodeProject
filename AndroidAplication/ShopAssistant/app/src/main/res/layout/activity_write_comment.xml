@@ -141,10 +141,15 @@
                 android:id="@+id/add_arrow"
                 android:scaleType="fitXY" />
 
-
         </LinearLayout>
 
-</LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
 
         </ScrollView>
     </LinearLayout>

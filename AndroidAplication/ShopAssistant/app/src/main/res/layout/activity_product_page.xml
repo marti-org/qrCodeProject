@@ -73,16 +73,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/shoes1Text"
-
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp" />
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btnWriteComment"
-                android:onClick="btnWriteCommentClick" />
+
+
+
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -109,6 +106,55 @@
                     android:text="@string/btnSort"
                     android:id="@+id/bntSort"
                     />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:onClick="btnWriteCommentClick"
+                    android:gravity="center"
+                    >
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:clickable="false"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/btnWriteComment" >
+                </TextView>
+
+
+                    <ImageButton
+                        android:id="@+id/button_x"
+                        android:layout_width="45dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:onClick="btnWriteCommentClick"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/write_icon_271_300"
+                        >
+                    </ImageButton>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
 
              </LinearLayout>
 
