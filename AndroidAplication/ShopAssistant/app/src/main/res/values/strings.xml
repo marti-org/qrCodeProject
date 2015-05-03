@@ -85,6 +85,6 @@
     <string name="zi">Samsung GALAXY S3 NEO WHITE</string>
     <string name="zj">Samsung GALAXY S3 MINI WHITE</string>
     <string name="zk">Samsung GALAXY GRAND NEO PLUS BLACK</string>
-
+    <string name="hintSearch">Name of product</string>
 
 </resources>
