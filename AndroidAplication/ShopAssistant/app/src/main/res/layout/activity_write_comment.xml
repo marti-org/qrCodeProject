@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/SrollId"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -39,12 +59,49 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_send"
+        android:onClick="btnSaveMessageClick"
+        android:layout_marginBottom="10dp" />
+
     <TextView
         android:text="@string/your_comments"
         android:layout_width="wrap_content"
         android:textSize="25dp"
         android:layout_height="wrap_content"
         />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_photo"
+            android:id="@+id/add_photo"
+            android:scaleType="fitXY" />
+
+
+        <RatingBar
+            android:numStars="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
 
     <TextView
         android:text="@string/remaining_character"
@@ -61,6 +118,7 @@
             android:layout_width="fill_parent"
             android:textSize="15dp"
             android:layout_height="0dp"
+            android:minLines="5"
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:textAlignment="center"
@@ -74,48 +132,9 @@
             />
 
 
+</LinearLayout>
 
-
-
-
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal">
-
-
-
-
-            <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/add_photo"
-                android:id="@+id/add_photo"
-                android:scaleType="fitXY" />
-
-
-            <RatingBar
-                android:numStars="5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                 />
-
-
-        </LinearLayout>
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/btn_send"
-        android:onClick="btnSaveMessageClick"
-        android:textColor="#0000FF"
-        android:background="#AAAAAA"
-        android:layout_gravity="center" />
-
-
+        </ScrollView>
     </LinearLayout>
 
 

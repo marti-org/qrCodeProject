@@ -30,7 +30,7 @@
     <string name="Shoe1">Adidas Kanadia</string>
     <string name="your_comments">Your comments:</string>
     <string name="remaining_character">Characters left:300</string>
-    <string name="btn_send">SEND</string>
+    <string name="btn_send">Send comment</string>
 
     <string name="comment1DateAndName">10.3.2015 | John</string>
     <string name="comment1Text"> it provides me all that Apple can user-friendly interface, perfect phone camera, perfect music quality, perfect screen quality, reliability and etc.</string>
