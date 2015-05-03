@@ -54,16 +54,16 @@ public class SearchActivity extends ActionBarActivity {
 
 
         //Cover Flow
-        mData.add(new GameEntity(R.drawable.za, R.string.za));
-        mData.add(new GameEntity(R.drawable.zb, R.string.zb));
-        mData.add(new GameEntity(R.drawable.zc, R.string.zc));
-        mData.add(new GameEntity(R.drawable.zd, R.string.zd));
-        mData.add(new GameEntity(R.drawable.zf, R.string.zf));
-        mData.add(new GameEntity(R.drawable.zg, R.string.zg));
-        mData.add(new GameEntity(R.drawable.zh, R.string.zh));
-        mData.add(new GameEntity(R.drawable.zi, R.string.zi));
-        mData.add(new GameEntity(R.drawable.zj, R.string.zj));
-        mData.add(new GameEntity(R.drawable.zk, R.string.zk));
+        mData.add(new GameEntity(R.drawable.xa, R.string.za));
+        mData.add(new GameEntity(R.drawable.xb, R.string.zb));
+        mData.add(new GameEntity(R.drawable.xc, R.string.zc));
+        mData.add(new GameEntity(R.drawable.xd, R.string.zd));
+        mData.add(new GameEntity(R.drawable.xf, R.string.zf));
+        mData.add(new GameEntity(R.drawable.xg, R.string.zg));
+        mData.add(new GameEntity(R.drawable.xh, R.string.zh));
+        mData.add(new GameEntity(R.drawable.xi, R.string.zi));
+        mData.add(new GameEntity(R.drawable.xj, R.string.zj));
+        mData.add(new GameEntity(R.drawable.xk, R.string.zk));
 
 
         mTitle = (TextSwitcher) findViewById(R.id.title);
