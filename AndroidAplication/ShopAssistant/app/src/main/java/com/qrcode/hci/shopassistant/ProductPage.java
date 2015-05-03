@@ -213,18 +213,11 @@ public class ProductPage extends ActionBarActivity {
         });
 
         if(!SortByPopular) {
-            ImageButton btnsort = (ImageButton) findViewById(R.id.btnSort);
-            TextView btnSort_text = (TextView) findViewById(R.id.btnSort_text);
-            btnSort_text.setText(getResources().getString(R.string.btnSortPopular));
-            btnsort.setImageResource(R.drawable.sort_icon);
-        }
-
-        else
-        {
-            ImageButton btnsort = (ImageButton) findViewById(R.id.btnSort);
-            TextView btnSort_text = (TextView) findViewById(R.id.btnSort_text);
-            btnSort_text.setText(getResources().getString(R.string.btnSort));
-            btnsort.setImageResource(R.drawable.sort_icon3);
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSortPopular));
+        }else{
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSort));
         }
 
         TextView txtCommentNumber = (TextView) findViewById(R.id.commentNumber);
@@ -281,10 +274,8 @@ public class ProductPage extends ActionBarActivity {
             }
         }else
         {
-            TextView btnSort_text = (TextView) findViewById(R.id.btnSort_text);
-            btnSort_text.setText(getResources().getString(R.string.btnSortPopular));
-            ImageButton btnsort = (ImageButton)findViewById(R.id.btnSort);
-            btnsort.setImageResource(R.drawable.sort_icon);
+            Button btnSort = (Button) findViewById(R.id.bntSort);
+            btnSort.setText(getResources().getString(R.string.btnSortPopular));
 
             Comment comment;
             for (int j = mComments.size()-1;j>=0;j--){
