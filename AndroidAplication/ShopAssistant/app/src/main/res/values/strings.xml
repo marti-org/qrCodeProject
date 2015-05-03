@@ -66,12 +66,30 @@
     <string name="photo8Description">Other covers</string>
 
     <string name="characterLeft">Characters left:</string>
+
     <string-array name="products_array">
         <item>Watch</item>
         <item>Walkman</item>
         <item>Wallet</item>
         <item>iWatch</item>
         <item>Wii</item>
+        <item>iphone</item>
+        <item>i-phone</item>
+        <item>I-phone</item>
+        <item>Iphone</item>
+        <item>Phone</item>
+        <item>Tablet</item>
+        <item>Samsung</item>
+        <item>Samsung Neo</item>
+        <item>Galaxy S3</item>
+        <item>Smart Device</item>
+        <item>Smart Phone</item>
+        <item>Smart Watch</item>
+        <item>Smart Telephone</item>
+        <item>Smart Electronic Device</item>
+        <item>Electronic Device</item>
+
+
     </string-array>
 
     <string name="za">Hot product - Watch</string>

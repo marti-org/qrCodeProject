@@ -19,8 +19,6 @@ public class SearchResultActivity extends ActionBarActivity {
     // Array of strings storing country names
     String[] products = new String[]
             {
-                    "Watch",
-                    "Tablet",
                     "Iphone 5S 16GB SMART PHONE",
                     "Samsung I9190 GALAXY S4 MINI WHITE",
                     "Iphone 6 16GB GOLD SMART PHONE",
@@ -28,14 +26,15 @@ public class SearchResultActivity extends ActionBarActivity {
                     "LG723 G3 BEAT TITAN SMART PHONE ",
                     "Samsung I9301 GALAXY S3 NEO WHITE",
                     "Samsung I8200 GALAXY S3 MINI WHITE",
-                    "Samsung I9060 GALAXY GRAND NEO PLUS BLACK"
+                    "Samsung I9060 GALAXY GRAND NEO PLUS BLACK",
+                    "Watch",
+                    "Tablet",
             };
 
 
     int[] flags = new int[]
             {
-                    R.drawable.za,
-                    R.drawable.zb,
+
                     R.drawable.zc,
                     R.drawable.zd,
                     R.drawable.zf,
@@ -43,20 +42,22 @@ public class SearchResultActivity extends ActionBarActivity {
                     R.drawable.zh,
                     R.drawable.zi,
                     R.drawable.zj,
-                    R.drawable.zk
+                    R.drawable.zk,
+                    R.drawable.za,
+                    R.drawable.zb
             };
 
     // Array of strings to store currencies
     String[] currency = new String[]
             {
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
                     "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x Smart Watch \n"  + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x Smart Watch \n"  + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
-                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
+                    "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x Smart Watch \n"  + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n",
                     "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x Smart Watch \n"  + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n" ,
                     "\n" + "\t1 Material: Silicone and Aluminium \n" + "\t2 Weight:2.68Oz/76g \n" + "\t3 Color:White \n" + "\t4 Dimensions:\n" + "\t\t(9.45x1.57x0.39)''/(8x4x1)cm (LxWxH) \n"  + "\t5 Package Includes:\n" + "\t\t1 x Smart Watch \n"  + "\t\t1 x USB Cable \n"  + "\t\t1 x User Manual \n"
             };
