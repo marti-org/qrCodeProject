@@ -99,13 +99,66 @@
 
 
 
-                <Button
+
+
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
                     android:onClick="btnSortCommentClick"
-                    android:text="@string/btnSort"
-                    android:id="@+id/bntSort"
-                    />
+                    android:gravity="center"
+                    >
+
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:id="@+id/btnSort_text"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/btnSort" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/btnSort"
+                        android:layout_width="45dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:onClick="btnSortCommentClick"
+                        android:src="@drawable/sort_icon3"
+                        >
+                    </ImageButton>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
 
 
 
@@ -136,9 +189,9 @@
                         android:layout_width="45dp"
                         android:layout_height="50dp"
                         android:background="@null"
-                        android:onClick="btnWriteCommentClick"
                         android:scaleType="fitXY"
                         android:src="@drawable/write_icon_271_300"
+                        android:onClick="btnWriteCommentClick"
                         >
                     </ImageButton>
 
