@@ -13,5 +13,7 @@ public class Pic7 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pic7);
 
+        //Show backButton
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

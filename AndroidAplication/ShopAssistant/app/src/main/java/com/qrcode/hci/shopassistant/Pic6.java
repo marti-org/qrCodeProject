@@ -13,6 +13,8 @@ public class Pic6 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pic6);
 
+        //Show backButton
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
 

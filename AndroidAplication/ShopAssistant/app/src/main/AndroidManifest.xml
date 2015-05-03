@@ -35,6 +35,9 @@
         <activity
             android:name=".Pic1"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -43,6 +46,9 @@
         <activity
             android:name=".Pic2"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -51,6 +57,9 @@
         <activity
             android:name=".Pic3"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -59,6 +68,9 @@
         <activity
             android:name=".Pic4"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -67,6 +79,9 @@
         <activity
             android:name=".Pic5"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -75,6 +90,9 @@
         <activity
             android:name=".Pic6"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -83,6 +101,9 @@
         <activity
             android:name=".Pic7"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -91,6 +112,9 @@
         <activity
             android:name=".Pic8"
             android:label="@string/title_activity_scan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductPage" />
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

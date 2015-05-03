@@ -13,5 +13,7 @@ public class Pic3 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pic3);
 
+        //Show backButton
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

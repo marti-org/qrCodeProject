@@ -74,17 +74,19 @@
         <item>Wii</item>
     </string-array>
 
-    <string name="za">Watch</string>
-    <string name="zb">Tablet</string>
-    <string name="zc">Iphone 5S</string>
-    <string name="zd">Samsung GALAXY S4</string>
+    <string name="za">Hot product - Watch</string>
+    <string name="zb">Hot product - Tablet</string>
+    <string name="zc">Hot product - Iphone 5S</string>
+    <string name="zd">Hot product - Samsung GALAXY S4</string>
 
-    <string name="zf">Iphone 6</string>
-    <string name="zg">Samsung GALAXY S6</string>
-    <string name="zh">LG723 G3</string>
-    <string name="zi">Samsung GALAXY S3 NEO WHITE</string>
-    <string name="zj">Samsung GALAXY S3 MINI WHITE</string>
-    <string name="zk">Samsung GALAXY GRAND NEO PLUS BLACK</string>
+    <string name="zf">Hot product - Iphone 6</string>
+    <string name="zg">Hot product - Samsung GALAXY S6</string>
+    <string name="zh">Hot product - LG723 G3</string>
+    <string name="zi">Hot product - Samsung S3 NEO</string>
+    <string name="zj">Hot product - Samsung S3 MINI</string>
+    <string name="zk">Hot product - Samsung NEO PLUS</string>
     <string name="hintSearch">Name of product</string>
+    <string name="ScanExplonation">Scan QR code by using camera. </string>
+    <string name="hotProduct">Hot products</string>
 
 </resources>
