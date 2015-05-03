@@ -26,7 +26,7 @@
 
 
     <string name="commentNumber">Numbers of comment: </string>
-    <string name="btnWriteComment">Write comment</string>
+    <string name="btnWriteComment">Write\ncomment</string>
     <string name="Back_to_product">Back to Product</string>
     <string name="Back_to_scan">New scaning</string>
     <string name="Shoe1">Adidas Kanadia</string>
